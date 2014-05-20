@@ -1,0 +1,25 @@
+	*javadoc.txt* Plugin for opening a browser to the javadoc
+
+This plugin enables the user to open a browser to the javadoc for the word under
+the cursor.
+
+Mappings:
+<Leader>j or <Plug>JavadocOpen
+	Open the javadoc for the word under the cursor.
+
+    map <leader>j <Plug>JavadocOpen
+
+Commands:
+:Javadoc {word}
+	Open the javadoc for the specified word.
+
+						*javadoc-settings*
+
+						*g:javadoc_browser*
+This sets which browser opens when the plug in activated.
+	let g:javadoc_browser = "/usr/bin/firefox"
+
+						*g:javadoc_path*
+This sets the list of directories when searching for a matched word.
+Entries must be saparated by a ':'
+	let g:javadoc_path = "/usr/share/javadoc:/home/user/javadoc"
