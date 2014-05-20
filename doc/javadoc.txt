@@ -23,3 +23,7 @@ This sets which browser opens when the plug in activated.
 This sets the list of directories when searching for a matched word.
 Entries must be saparated by a ':'
 	let g:javadoc_path = "/usr/share/javadoc:/home/user/javadoc"
+
+						*javadoc_credit*
+Javadoc was developed by Chad Skeeters <github.com/cskeeters>.
+Distributed under Vim's |license|.
