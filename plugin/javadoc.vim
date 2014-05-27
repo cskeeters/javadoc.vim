@@ -70,7 +70,7 @@ function! s:Open(class)
 endfunction
 
 noremap <unique> <script> <Plug>JavadocOpen <SID>Open
-noremap <SID>Open :call <SID>Open(expand("<cword>"))<cr>
+noremap <silent> <SID>Open :call <SID>Open(expand("<cword>"))<cr>
 noremenu <script> Plugin.javadoc <SID>Open
 
 if !hasmapto('<Plug>JavadocOpen')
