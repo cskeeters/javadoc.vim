@@ -1,0 +1,5 @@
+g:javadoc_browser	javadoc.txt	/*g:javadoc_browser*
+g:javadoc_path	javadoc.txt	/*g:javadoc_path*
+javadoc-settings	javadoc.txt	/*javadoc-settings*
+javadoc.txt	javadoc.txt	/*javadoc.txt*
+javadoc_credit	javadoc.txt	/*javadoc_credit*

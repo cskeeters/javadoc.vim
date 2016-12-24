@@ -1,4 +1,4 @@
-	*javadoc.txt* Plugin for opening a browser to the javadoc
+*javadoc.txt* Plugin for opening a browser to the javadoc
 
 This plugin enables the user to open a browser to the javadoc for the word under
 the cursor.
