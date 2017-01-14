@@ -55,7 +55,7 @@ function! s:Open(class)
             echo "Opening ".l:path
         endif
         execute system(g:javadoc_browser." ".l:path." &")
-        if l:browser_closed && len(l:pahts) > 1 && i == 0
+        if l:browser_closed && len(l:paths) > 1 && i == 0
             "sleep to avoid 'Firefox is already running, but not responding.'
             :sleep 2
         endif
