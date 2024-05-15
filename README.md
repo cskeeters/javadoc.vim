@@ -1,3 +1,5 @@
+**NOTE: neovim users may want to use [javadoc.nvim](https://github.com/cskeeters/javadoc.nvim).**
+
 # javadoc.vim
 
 javadoc.vim is a lightweight plugin for vim.  It allows a user to open a browser to the javadoc for a class which the mouse is over (inspired by eclipse).
