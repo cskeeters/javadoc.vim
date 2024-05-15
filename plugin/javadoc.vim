@@ -68,8 +68,10 @@ function! s:Open(class)
     let i = 0
     while i < len(l:paths)
         let path = l:paths[i]
+        let cmd = g:javadoc_browser." ".l:path
         if g:javadoc_debug != 0
             echo "Opening ".l:path
+            echo "Running: ".l:cmd
         endif
         execute system(g:javadoc_browser." ".l:path." &")
         if l:browser_closed && len(l:paths) > 1 && i == 0
