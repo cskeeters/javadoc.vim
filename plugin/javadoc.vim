@@ -6,10 +6,21 @@ let loaded_javadoc = 1
 if !exists("g:javadoc_browser")
     if has('macunix')
         let g:javadoc_browser = "open"
-    else
-        let g:javadoc_browser = "/usr/bin/firefox"
+    endif
+
+    if has('linux')
+        let g:javadoc_browser = "xdg-open"
+    endif
+
+    if executable('firefox')
+        let g:javadoc_browser = "firefox"
+    endif
+
+    if executable('google-chrome')
+        let g:javadoc_browser = "google-chrome"
     endif
 endif
+
 if !exists("g:javadoc_debug")
     let g:javadoc_debug = 0
 endif
@@ -42,6 +53,12 @@ endfunction
 function! s:Open(class)
     if g:javadoc_debug != 0
         echo "Opening javadoc for ".a:class
+    endif
+
+
+    if !exists("g:javadoc_browser")
+        echom "javadoc_browser was not set and could not be detected"
+        return
     endif
 
     let paths = s:filterclassuse(s:getfiles(a:class))
