@@ -3,27 +3,38 @@
 This plugin enables the user to open a browser to the javadoc for the word under
 the cursor.
 
-Mappings:
-<Leader>j or <Plug>JavadocOpen
-	Open the javadoc for the word under the cursor.
+==============================================================================
+MAPPINGS                                                    *javadoc-mappings*
 
-    map <leader>j <Plug>JavadocOpen
+`<Leader>j` or `<Plug>JavadocOpen`
+	Open the javadoc for the word under the cursor:
+>vim
+	map <leader>j <Plug>JavadocOpen
+<
 
-Commands:
-:Javadoc {word}
-	Open the javadoc for the specified word.
+==============================================================================
+COMMANDS                                                    *javadoc-commands*
 
-						*javadoc-settings*
+`:Javadoc {word}`
+  Open the javadoc for the specified word.
 
-						*g:javadoc_browser*
+==============================================================================
+SETTINGS                                                    *javadoc-settings*
+
+                                                           *g:javadoc_browser*
 This sets which browser opens when the plug in activated.
-	let g:javadoc_browser = "/usr/bin/firefox"
-
-						*g:javadoc_path*
+>vim
+  let g:javadoc_browser = "/usr/bin/firefox"
+<
+                                                              *g:javadoc_path*
 This sets the list of directories when searching for a matched word.
 Entries must be saparated by a ':'
-	let g:javadoc_path = "/usr/share/javadoc:/home/user/javadoc"
+>vim
+  let g:javadoc_path = "/usr/share/javadoc:/home/user/javadoc"
+<
 
-						*javadoc_credit*
-Javadoc was developed by Chad Skeeters <github.com/cskeeters>.
+Javadoc was developed by Chad Skeeters <https://github.com/cskeeters>.
 Distributed under Vim's |license|.
+
+==============================================================================
+vim:tw=78:ft=help:norl:et:ts=2:sw=2:
